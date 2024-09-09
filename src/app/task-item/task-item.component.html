@@ -1,0 +1,9 @@
+<div [appHighlightTask]="task.completed" [appTaskStatus]="task.completed" appHoverEffect>
+    <p>
+        {{ task.title }}
+        <button (click)="onDelete()">Delete</button>
+        <button (click)="onToggleComplete()">
+            {{ task.completed ? 'Mark Incomplete' : 'Mark Complete' }}
+        </button>
+    </p>
+</div>
